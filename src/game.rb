@@ -32,6 +32,17 @@ class Game
         puts "#{'>>'.red} #{msg_string}"
     end
 
+    def self.display_help
+        puts ""
+        puts "RULES".bold
+        puts "* The goal is to guess an unknown word"
+        puts "* The word has 5 letters"
+        puts "* You have 5 turns to guess it"
+        puts "* #{'Green'.green} indicates a letter which is in the unknown word, and in the correct position"
+        puts "* #{'Red'.red} indicates a letter which is not in the unknown word"
+        puts "* #{'Yellow'.yellow} indicates a letter which is in the unknown word, but in the incorrect position"
+    end
+
     # INSTANCE METHODS
     # run the program
     def run

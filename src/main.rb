@@ -17,13 +17,10 @@ begin
 
         when "Play Game"
             game.run
-
         when "Help"
-            puts "rules page"
-
+            Game.display_help
         when "Quit"
             program_running = false
-
         else
             puts "no mans land.".red
         end
