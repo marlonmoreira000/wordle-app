@@ -1,32 +1,35 @@
+# TODO
 # IMPORTS
 require "tty-prompt"
 require "colorize"
-require "./functions"
+require "./game"
 
 begin
     # MAIN PROGRAM
     program_running = true
-    Functions.print_welcome_screen
+    word = "trump".upcase
+    game = Game.new(word)
+    Game.print_welcome_screen
 
     # keep running the app until the user selects 'Quit'
     while program_running
-        menu_selection = Functions.main_menu_selection
+        menu_selection = Game.main_menu_selection
         case menu_selection
 
         when "Play Game"
-            puts "play game page"
+            game.run
 
         when "Help"
             puts "rules page"
 
         when "Quit"
-            puts "quit page"
+            program_running = false
 
         else
-            puts "no mans land."
-
+            puts "no mans land.".red
         end
     end
+
 # Handle error is someone exits the program using ctrl+c
 rescue TTY::Reader::InputInterrupt => e
     puts ""
