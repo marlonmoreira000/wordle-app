@@ -5,11 +5,12 @@
 require "tty-prompt"
 require "colorize"
 require "./game"
+require "./words"
 
 begin
     # MAIN PROGRAM
     program_running = true
-    word = "".upcase
+    word = Words.words.sample
     game = Game.new(word)
     Game.print_welcome_screen
 
