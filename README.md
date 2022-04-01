@@ -6,13 +6,11 @@ This is a simple app that lets you play Wordle on the command line!
 
 ## Resources
 
-- [Source Code]INSERT
-- [Documentation]INSERT
-- [Unit Tests]INSERT
+- [Source Code](https://github.com/marlonmoreira000/wordle-app/tree/master/src)
 
 ## Screenshots
 
-![schedule-table]INSERT
+![wordle-matrix]INSERT
 
 ## How to Install and Run
 

@@ -1,3 +1,6 @@
+
+#TODO: Get random word list
+
 # IMPORTS
 require "tty-prompt"
 require "colorize"
@@ -6,7 +9,7 @@ require "./game"
 begin
     # MAIN PROGRAM
     program_running = true
-    word = "trump".upcase
+    word = "".upcase
     game = Game.new(word)
     Game.print_welcome_screen
 
