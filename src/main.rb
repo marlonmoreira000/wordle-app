@@ -1,4 +1,3 @@
-# TODO
 # IMPORTS
 require "tty-prompt"
 require "colorize"

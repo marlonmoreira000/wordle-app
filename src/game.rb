@@ -6,6 +6,7 @@ class Game
     def initialize(word)
         @guesses = {guess_1: "", guess_2: "", guess_3: "", guess_4: "", guess_5: ""}
         @word = word.upcase
+        @turns = 1
     end
 
     # CLASS METHODS
@@ -36,12 +37,12 @@ class Game
     def run
         print_matrix(@guesses, @word)
         guess_is_correct = false
-        @guesses.each do |key, val|
+        @guesses.each do |key, _val|
             # get guess and make sure its a valid string
             guess_is_valid = false
             while guess_is_valid == false
                 puts ""
-                puts "Guess a word..."
+                puts "Turn #{@turns}: Guess a word..."
                 print ">> "
                 guess = gets.strip.upcase
                 # check if guess is valid
@@ -55,12 +56,15 @@ class Game
             @guesses[key] = guess
             # print matrix using guesses hash
             print_matrix(@guesses, @word)
+            # increase turn by 1
+            @turns += 1
             # check if the guess is correct
             if guess == @word
                 guess_is_correct = true
                 break
             end
         end
+
         puts ""
         if guess_is_correct
             puts "YOU WON!".green
