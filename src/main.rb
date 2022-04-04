@@ -1,6 +1,3 @@
-
-#TODO: Get random word list
-
 # IMPORTS
 require "tty-prompt"
 require "colorize"
