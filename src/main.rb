@@ -15,7 +15,6 @@ begin
     while program_running
         menu_selection = Game.main_menu_selection
         case menu_selection
-
         when "Play Game"
             game.run
         when "Help"
