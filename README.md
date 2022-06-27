@@ -1,12 +1,14 @@
 ![welcome-screen](img/welcome-screen.png)
 
+
+## Links
+
+- [Demo video](https://www.linkedin.com/posts/marlonmoreira_wordle-app-for-the-command-linefun-little-activity-6915665614170726400-Lvya/?utm_source=linkedin_share&utm_medium=member_desktop_web)
+- [Source code](https://github.com/marlonmoreira000/wordle-app/tree/master/src)
+
 ## Description
 
 This is a simple app that lets you play Wordle on the command line! 
-
-## Resources
-
-- [Source Code](https://github.com/marlonmoreira000/wordle-app/tree/master/src)
 
 ## Screenshots
 
